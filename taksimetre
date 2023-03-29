@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Taksimetre {
+    public static void main (String[] args){
+        System.out.println("Gidilen mesafeyi KM cinsinden giriniz: ");
+        int startPrice = 10;
+        Scanner tara = new Scanner(System.in);
+        int minPrice = 20;
+        double perKm = 2.2;
+        double dist = tara.nextDouble();
+        double price = dist * perKm;
+        if(price < 20 ) {
+            System.out.println("Ödenecek tutar: " + 20 + " TLdir.");
+        } else {
+            System.out.println("Ödencek tutar: " + price + " TL'dir.");
+        }
+    }
+}
